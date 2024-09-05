@@ -10,5 +10,5 @@ export default defineConfig({
         },
     ],
     reporter: [['html', { outputFolder: 'test-results' }]],
-    workers: 1, // Limita el número de trabajadores a 1
+    workers: 1,
 });
