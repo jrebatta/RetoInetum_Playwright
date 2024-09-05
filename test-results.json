@@ -1,0 +1,351 @@
+{
+  "config": {
+    "configFile": "E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\playwright.config.ts",
+    "rootDir": "E:/Juan/Nueva carpeta (2)/RetoInetum_Playwright/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "E:/Juan/Nueva carpeta (2)/RetoInetum_Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "E:/Juan/Nueva carpeta (2)/RetoInetum_Playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/Juan/Nueva carpeta (2)/RetoInetum_Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "E:/Juan/Nueva carpeta (2)/RetoInetum_Playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/Juan/Nueva carpeta (2)/RetoInetum_Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "google chrome",
+        "name": "google chrome",
+        "testDir": "E:/Juan/Nueva carpeta (2)/RetoInetum_Playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.46.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "should login successfully and add employee",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 9,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\firefox-1458\\firefox\\firefox.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\firefox-1458\\firefox\\firefox.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\firefox-1458\\firefox\\firefox.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-05T21:15:59.866Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-9a6a4a0ceacdb530cd69",
+          "file": "login.spec.js",
+          "line": 7,
+          "column": 16
+        },
+        {
+          "title": "should login successfully and add employee",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 9,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\webkit-2051\\Playwright.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\webkit-2051\\Playwright.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\webkit-2051\\Playwright.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-05T21:15:59.881Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-999ba0bb64bbf795138e",
+          "file": "login.spec.js",
+          "line": 7,
+          "column": 16
+        },
+        {
+          "title": "should login successfully and add employee",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "google chrome",
+              "projectName": "google chrome",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 9,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\chromium-1129\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\chromium-1129\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\chromium-1129\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-05T21:15:59.880Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-ffc55f3fb69515559eaa",
+          "file": "login.spec.js",
+          "line": 7,
+          "column": 16
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "should login successfully and add employee",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 8,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\firefox-1458\\firefox\\firefox.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\firefox-1458\\firefox\\firefox.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\firefox-1458\\firefox\\firefox.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-05T21:15:59.868Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-6ae7ddd4c55c6e9809b5",
+          "file": "login.spec.ts",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "should login successfully and add employee",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 8,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\webkit-2051\\Playwright.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\webkit-2051\\Playwright.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\webkit-2051\\Playwright.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-05T21:15:59.885Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-8416139582933009d5fa",
+          "file": "login.spec.ts",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "should login successfully and add employee",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "google chrome",
+              "projectName": "google chrome",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "failed",
+                  "duration": 10,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\chromium-1129\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\chromium-1129\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\n    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\juan2\\AppData\\Local\\ms-playwright\\chromium-1129\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:122:33)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\fixtureRunner.js:79:18)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:30)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\workerMain.js:309:7)\u001b[22m\n\u001b[2m    at E:\\Juan\\Nueva carpeta (E:\\Juan\\Nueva carpeta (2)\\RetoInetum_Playwright\\2)\\RetoInetum_Playwright\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-05T21:15:59.871Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-fe8c92c4997f5a439532",
+          "file": "login.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-05T21:15:58.918Z",
+    "duration": 1023.387,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

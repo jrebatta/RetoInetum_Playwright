@@ -1,0 +1,16 @@
+{
+  "validCredentials": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "employeeData": {
+    "firstName": "Juan",
+    "middleName": "Pedro",
+    "lastName": "Perez"
+  },
+  "expectedMessages": {
+    "dashboard": "Dashboard",
+    "successfullySaved": "Successfully Saved",
+    "employeeName": "Juan Perez"
+  }
+}
