@@ -1,4 +1,13 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PIMPage = void 0;
 class PIMPage {
@@ -18,45 +27,55 @@ class PIMPage {
         this.EmployeeIDList = 'div.oxd-table-row div.oxd-table-cell div[data-v-6c07a142]';
         this.page = page;
     }
-    async navigateToPIMAndAddEmployee() {
-        await this.page.click(this.aPIM);
-        await this.page.click(this.aAddEmployee);
+    navigateToPIMAndAddEmployee() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.page.click(this.aPIM);
+            yield this.page.click(this.aAddEmployee);
+        });
     }
-    async createEmployee(firstName, middleName, lastName) {
-        await this.page.fill(this.inputFirstName, firstName);
-        await this.page.fill(this.inputMiddleName, middleName);
-        await this.page.fill(this.inputLastName, lastName);
-        this.employeeID = await this.page.inputValue(this.inputEmployeeID);
-        await this.page.click(this.btnSave);
+    createEmployee(firstName, middleName, lastName) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.page.fill(this.inputFirstName, firstName);
+            yield this.page.fill(this.inputMiddleName, middleName);
+            yield this.page.fill(this.inputLastName, lastName);
+            this.employeeID = yield this.page.inputValue(this.inputEmployeeID);
+            yield this.page.click(this.btnSave);
+        });
     }
-    async verifySuccessMessage(expectedMessage) {
-        await this.page.waitForSelector(this.successfullySaved);
-        const message = await this.page.textContent(this.successfullySaved);
-        if (!message?.includes(expectedMessage)) {
-            throw new Error(`Expected message to contain "${expectedMessage}" but got "${message}"`);
-        }
+    verifySuccessMessage(expectedMessage) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.page.waitForSelector(this.successfullySaved);
+            const message = yield this.page.textContent(this.successfullySaved);
+            if (!(message === null || message === void 0 ? void 0 : message.includes(expectedMessage))) {
+                throw new Error(`Expected message to contain "${expectedMessage}" but got "${message}"`);
+            }
+        });
     }
-    async verifyEmployeeName(expectedName) {
-        await this.page.waitForSelector(this.firstLastName);
-        const name = await this.page.textContent(this.firstLastName);
-        if (!name?.includes(expectedName)) {
-            throw new Error(`Expected employee name to be "${expectedName}" but got "${name}"`);
-        }
+    verifyEmployeeName(expectedName) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.page.waitForSelector(this.firstLastName);
+            const name = yield this.page.textContent(this.firstLastName);
+            if (!(name === null || name === void 0 ? void 0 : name.includes(expectedName))) {
+                throw new Error(`Expected employee name to be "${expectedName}" but got "${name}"`);
+            }
+        });
     }
-    async verifyEmployeeNameInList() {
-        await this.page.click(this.EmployeeList);
-        if (this.employeeID) {
-            await this.page.fill(this.inputEmployeeIDList, this.employeeID);
-        }
-        else {
-            throw new Error('Employee ID is not set.');
-        }
-        await this.page.click(this.btnSearchList);
-        const displayedEmployeeID = await this.page.textContent(this.EmployeeIDList);
-        if (displayedEmployeeID !== this.employeeID) {
-            console.log(displayedEmployeeID);
-            throw new Error(`Expected Employee ID to be "${this.employeeID}" but got "${displayedEmployeeID}"`);
-        }
+    verifyEmployeeNameInList() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.page.click(this.EmployeeList);
+            if (this.employeeID) {
+                yield this.page.fill(this.inputEmployeeIDList, this.employeeID);
+            }
+            else {
+                throw new Error('Employee ID is not set.');
+            }
+            yield this.page.click(this.btnSearchList);
+            const displayedEmployeeID = yield this.page.textContent(this.EmployeeIDList);
+            if (displayedEmployeeID !== this.employeeID) {
+                console.log(displayedEmployeeID);
+                throw new Error(`Expected Employee ID to be "${this.employeeID}" but got "${displayedEmployeeID}"`);
+            }
+        });
     }
 }
 exports.PIMPage = PIMPage;
